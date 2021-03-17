@@ -45,7 +45,6 @@ class FieldElement:
 		num = pow(self.num,n,self.prime)
 		return self.__class__(num,self.prime)
 
-
 	def __truediv__(self,other):
 		if self.prime != other.prime:
 			raise TypeError('Cannot divide two number in different fields')
